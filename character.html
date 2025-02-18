@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+     <!-- Bootstrap 3 CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Diplomata+SC&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/external css/style.css">
+        <style>
+            .leckerli-one-regular {
+         font-family: "Leckerli One", cursive;
+         font-weight: 400;
+         font-style: nomal;
+         font-size:50px;
+        }
+        body{
+            background-image: url("../media/images/yellowflower.jpg");
+        }
+
+            .background{
+        background-color:rgb(255, 172, 156);
+        width:500px;
+        height:430px;
+        position:relative;
+        top:5px;
+        padding-left:50px;
+        padding-top:0px;
+        border-left:16px solid rgb(150, 98, 35);
+        border-top:16px solid rgb(165, 125, 65);
+        border-right:16px solid rgb(158, 100, 29);
+        border-bottom:16px solid rgb(104, 67, 28);
+    }
+    .face{
+        width:300px;
+       height:250px;
+        background-color:white;
+        border:3px solid black;
+        position:absolute;
+        top:100px;
+        left:50px;
+        border-radius:40%;
+    }
+    .lefteye{
+       width:24px;
+        height:28px;
+        background-color:black;
+        position:absolute;
+        top:115px;
+        left:50px;
+        border-radius:50%;
+    }
+    .righteye{
+        width:24px;
+        height:28px;
+        background-color:black;
+        position:absolute;
+        top:115px;
+        left:210px;
+        border-radius:50%;
+    }
+    .nose{
+        width:40px;
+        height:28px;
+        background-color:yellow;
+        border:3px solid black;
+        border-radius:50%;
+        position:absolute;
+        top:130px;
+        left:120px;
+    }
+    .leftearborder{
+        width: 0;
+	    height: 0;
+	    border-top: 50px solid transparent;
+	    border-left: 80px solid black;
+	    border-bottom: 40px solid transparent;
+        position:absolute;
+        top:60px;
+        left:90px;
+        transform:rotate(15deg);
+    }
+    .leftearcolor{
+        width: 0;
+	    height: 0;
+	    border-top: 60px solid transparent;
+	    border-left: 75px solid white;
+	    border-bottom: 35px solid transparent;
+        position:absolute;
+        top:60px;
+        left:95px;
+        transform:rotate(10deg);
+    }
+    .rightearborder{
+        width: 0;
+	    height: 0;
+	    border-top: 50px solid transparent;
+	    border-left: 80px solid black;
+	    border-bottom: 40px solid transparent;
+        position:absolute;
+        top:60px;
+        left:260px;
+        transform:rotate(-80deg);
+    }
+    .rightearcolor{
+        width: 0;
+	    height: 0;
+	    border-top: 60px solid transparent;
+	    border-left: 75px solid white;
+	    border-bottom: 35px solid transparent;
+        position:absolute;
+        top:60px;
+        left:255px;
+        transform:rotate(-83deg);
+    }
+    .leftbowthing{
+        z-index:1;
+        width: 0;
+	    height: 0;
+	    border-top: 60px solid transparent;
+	    border-left: 75px solid red;
+	    border-bottom: 35px solid transparent;
+        position:absolute;
+        top:50px;
+        left:200px;
+        transform:rotate(10deg);
+    }
+    .rightbowthing{
+        z-index:1;
+        width: 0;
+	    height: 0;
+	    border-top: 60px solid transparent;
+	    border-left: 75px solid red;
+	    border-bottom: 35px solid transparent;
+        position:absolute;
+        top:85px;
+        left:250px;
+        transform:rotate(-170deg);
+    }
+    .bowmiddle{
+        z-index:2;
+        width:30px;
+        height:30px;
+        border:3px solid black;
+        background-color:red;
+        border-radius:100%;
+        position:absolute;
+        top:100px;
+        left:250px;
+    }   
+    
+    #footer{
+        position:absolute;
+        top:550px;
+        width:101%;
+    }
+        </style>
+        <title>Image</title>
+    </head>
+    <body>
+        <!---nav bar-->
+        <nav class="navbar navbar-expand-sm navbar-custom navbar-light">
+            <!-- Brand -->
+            <a class="navbar-brand lato-bold webdev" href="../index.html">PORTFOLIO</a>
+          
+            <!-- Links -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link lato-bold" href="character.html">Character (Hello Kitty)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link lato-bold" href="my_id.html">ID schedule</a>
+              </li>
+          
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle lato-bold" href="#" id="navbardrop" data-toggle="dropdown">
+                  RECIPE
+                </a>
+                <div class="dropdown-menu secret">
+                  <a class="dropdown-item lato-bold" href="recipe1.mapodofu.html">Plain HTML</a>
+                  <a class="dropdown-item lato-bold" href="recipe2.mapodofu.html">With CSS</a>
+                  <a class="dropdown-item lato-bold" href="recipe3.mapodofu.html">With  BOOTSTRAP (final)</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="allencompasing container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                    <div class="background">
+                        <p class="leckerli-one-regular ">Hello!</p>
+                        <div class="bowmiddle"></div>
+                        <div class="leftbowthing"></div>
+                        <div class="rightbowthing"></div>
+                        <div class="leftearborder"></div>
+                        <div class="leftearcolor"></div>
+                        <div class="rightearborder"></div>
+                        <div class="rightearcolor"></div>
+                        <div class="face">
+                            <div class="lefteye"></div>
+                            <div class="righteye"></div>
+                            <div class="nose"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+            </div>
+           </div>
+        </div>
+        <!--footer-->
+            <div class="row" id="footer">
+                <div class="col-md-12">
+                    <h5 class="text-left lato-bold">Mika Hinami</h5>
+                    <h5 class="text-right lato-bold">mjhinami@cps.edu</h5>
+                </div>
+            </div>
+    </body>
+</html>
