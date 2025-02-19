@@ -21,7 +21,7 @@ li{
 }
 #paragraph{
     width:100%;
-    height:700px;
+    height:100%;
     background-color:rgb(255, 255, 149);
    margin-top:10px;
     text-align: center;
@@ -61,7 +61,7 @@ img{
 video{
     background-color:rgb(234, 219, 134);
    
-    width:100%px;
+    width:100%;
     border:20px solid rgb(192, 104, 0);
     border-radius:5%;
 }
@@ -76,16 +76,11 @@ h3{
 }
 #sources{
     background-color:rgb(236, 200, 42);
-    
     width:100%;
-    
 }
 h4{
     color:rgb(160, 130, 24);
-   
 }
-
-
 .abril-fatface-regular {
     font-family: "Abril Fatface", serif;
     font-weight: 400;
